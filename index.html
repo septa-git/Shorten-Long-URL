@@ -1,0 +1,23 @@
+      <!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Create Short URL from Long URL</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Create Short URL from Long URL using <a href="https://is.gd" title="Visit is.gd" target="_blank">https://is.gd</a> API</h1>
+    <p>Pure Vanilla JavaScript solution that doesn't require any authorization. Uses JSONP request to get around CORS blocking.<br>The Short URL generated is copied to clipboard.</p>
+    <div class="stage">
+      <input type="url" id="url" placeholder="Enter URL to shorten incl. http(s)://" value="http://">
+      <button id="action">Get ShortUrl</button>
+      <br>
+      <div id="output"></div>
+    </div>
+    <div id="tested">Tested in Firefox, Chrome, Edge & IE11</div>
+
+
+
+  <script  src="script.js"></script>
+  </body>
+</html>

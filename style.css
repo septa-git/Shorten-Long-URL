@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500italic);
+html {
+  height: 100%;
+  background-color: #222024;
+  background: radial-gradient(circle at center, #47414c 0%, #222024 100%);
+  background-repeat: no-repeat;
+}
+body {
+  text-align: center;
+  font: normal 1em "Fira Sans", sans-serif;
+  line-height: 1.2;
+  color: #ddd;
+}
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -0.1em;
+  width: 0;
+  height: 0.1em;
+  background-color: #00bf00;
+  transform: translateX(-50%);
+  transition: width 0.2s;
+}
+a:hover,
+a:focus {
+  color: #00bf00;
+}
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+#tested {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: x-small;
+  pointer-events: none;
+}
+.stage {
+  margin-top: 25vh;
+}
+label {
+  color: #fff;
+}
+input[type=url] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+input[type=url]:focus {
+  border-color: #333;
+}
+button {
+  padding: 5px 15px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+input#url {
+  width: 50vw;
+}
+#output {
+  margin-top: 1rem;
+}
+#output > span {
+  display: inline-block;
+  color: #68ff68;
+  -webkit-animation: expandtext 0.4s ease-out;
+          animation: expandtext 0.4s ease-out;
+}
+#output > span.error {
+  color: #ff5b5b;
+}
+@-webkit-keyframes expandtext {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes expandtext {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  85% {
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
