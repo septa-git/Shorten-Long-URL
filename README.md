@@ -1,0 +1,3 @@
+# building-a-url-shortener-with-javascript
+
+Explore the fascinating world of web development as we delve into the creation of a powerful URL shortener using JavaScript. This hands-on guide demonstrates how to leverage the is.gd technology to efficiently shorten URLs, optimizing link sharing and enhancing user experience. Join us on this coding journey and learn to craft your own URL shortener, step by step. For a practical demonstration, check out the shortened link: Shorten Your URL https://septa-git.github.io/building-a-url-shortener-with-javascript/. Start building and sharing shorter, smarter links today! 🚀
